@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+[data-testid="stAppViewContainer"],
+[data-testid="stHeader"] {
+  color-scheme: dark !important;
+}
+
+[data-testid="stAppViewContainer"] {
+  background: var(--app-bg) !important;
+  color: var(--text) !important;
+}
+
+[data-testid="stHeader"] {
+  background: color-mix(in srgb, var(--app-bg) 92%, transparent) !important;
+}
+
+.main .block-container {
+  max-width: 1480px;
+  padding: 2rem 3rem 4rem;
+}
+
+[data-testid="stSidebar"] {
+  background: var(--surface) !important;
+  border-right: 1px solid var(--border);
+}
+
+[data-testid="stSidebarNav"] {
+  display: none;
+}
+
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {
+  gap: 0.8rem;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.35rem 1.15rem;
+  color: var(--text);
+  font-family: var(--font-stack);
+}
+
+.sidebar-brand-mark {
+  width: 2.55rem;
+  height: 2.55rem;
+  display: grid;
+  place-items: center;
+  background: var(--surface-muted);
+  border-radius: 0.9rem;
+}
+
+.sidebar-brand-mark svg {
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+.sidebar-brand strong,
+.sidebar-brand small {
+  display: block;
+}
+
+.sidebar-brand strong {
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+}
+
+.sidebar-brand small {
+  margin-top: 0.1rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.sidebar-current {
+  margin: 0;
+  color: var(--blue-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+[data-testid="stSidebar"] h5,
+[data-testid="stSidebar"] h6 {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+[data-testid="stSidebar"] [data-testid="stPageLink"] a {
+  min-height: 2.65rem;
+  border-radius: 0.8rem;
+  font-weight: 550;
+}
+
+[data-testid="stSidebar"] [data-testid="stSelectbox"] label,
+[data-testid="stSidebar"] [data-testid="stDateInput"] label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+[data-testid="stWidgetLabel"] p,
+[data-testid="stWidgetLabel"] label {
+  color: var(--text);
+}
+
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+[data-testid="stDateInput"] input,
+[data-testid="stNumberInput"] input,
+[data-testid="stTextInput"] input,
+[data-testid="stMultiSelect"] div[data-baseweb="select"] > div {
+  background-color: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+  border-radius: 0.75rem !important;
+}
+
+[data-testid="stRadio"] label,
+[data-testid="stCheckbox"] label {
+  color: var(--text) !important;
+}
+
+[data-testid="stButton"] button,
+[data-testid="stDownloadButton"] button {
+  min-height: 2.55rem;
+  border-radius: 0.8rem;
+  border-color: var(--border);
+  color: var(--text);
+  font-weight: 600;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+[data-testid="stButton"] button:hover,
+[data-testid="stDownloadButton"] button:hover {
+  border-color: var(--blue);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--blue) 12%, transparent);
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+  background: var(--surface);
+  border-color: var(--border) !important;
+  border-radius: 1.1rem;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab-list"] {
+  gap: 0.35rem;
+}
+
+[data-testid="stTabs"] [data-baseweb="tab"] {
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.section-heading {
+  margin: 1.5rem 0 0.85rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-stack);
+  font-size: 1.28rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.section-description {
+  margin: 0.35rem 0 0;
+  color: var(--text-muted);
+  font-family: var(--font-stack);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+[data-testid="stCaptionContainer"] {
+  color: var(--text-muted);
+}
+
+[data-testid="stAlert"] {
+  border-radius: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .main .block-container {
+    padding: 1.3rem 1.2rem 3rem;
+  }
+}
